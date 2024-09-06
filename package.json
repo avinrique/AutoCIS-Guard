@@ -12,6 +12,10 @@
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
     "electron": "^32.0.2",
+<<<<<<< HEAD
     "realm": "^12.13.1"
+=======
+    "fs": "^0.0.1-security"
+>>>>>>> 509c99aacf8a41d922632bb915070a451001ce7e
   }
 }

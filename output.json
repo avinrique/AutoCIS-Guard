@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "Guideline": "Ensure 'Enforce password history' is set to '24 or more password(s)'",
     "Expected Output": "24",
     "Actual Output": "Force user logoff how long after time expires?:       Never\r\nMinimum password age (days):                          0\r\nMaximum password age (days):                          42\r\nMinimum password length:                              0\r\nLength of password history maintained:                None\r\nLockout threshold:                                    Never\r\nLockout duration (minutes):                           30\r\nLockout observation window (minutes):                 30\r\nComputer role:                                        WORKSTATION\r\nThe command completed successfully.",
@@ -33,6 +34,65 @@
     "Guideline": "Ensure 'Minimum password length' is set to '14 or more character(s)'",
     "Expected Output": "14",
     "Actual Output": "0",
+=======
+    "Guideline": "Ensure 'usb-storage' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'udf' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'squashfs' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'jffs2' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'hfsplus' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'hfs' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'freevxfs' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'cramfs' kernel module is not available",
+    "Expected Output": "",
+    "Actual Output": "",
+    "Status": "Pass"
+  },
+  {
+    "Guideline": "Ensure 'nosuid' option is set on '/tmp' partition",
+    "Expected Output": "nosuid",
+    "Actual Output": "",
+    "Status": "Fail"
+  },
+  {
+    "Guideline": "Ensure 'nodev' option is set on '/tmp' partition",
+    "Expected Output": "nodev",
+    "Actual Output": "",
+>>>>>>> 509c99aacf8a41d922632bb915070a451001ce7e
     "Status": "Fail"
   },
   {

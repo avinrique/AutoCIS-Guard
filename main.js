@@ -95,27 +95,40 @@ function getWindowsInfo(event) {
 }
 
 function getLinuxInfo(event) {
-    fs.readFile('/etc/os-release', 'utf8', (err, data) => {
-        if (err) {
-            console.error(`Error reading os-release file: ${err.message}`);
+    exec('cat /etc/os-release | grep PRETTY_NAME', (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error running CIS benchmark: ${error}`);
             return;
         }
-
-        const lines = data.split('\n');
-        let version = '';
-        let name = '';
-
-        lines.forEach(line => {
-            if (line.startsWith('VERSION_ID=')) {
-                version = line.split('=')[1].replace(/"/g, '').trim();
-            }
-            if (line.startsWith('NAME=')) {
-                name = line.split('=')[1].replace(/"/g, '').trim();
-            }
-        });
-        event.reply('os-detected',name);
+        cas = stdout.replace("PRETTY_NAME" , "")
+        cas = cas.replace('"' , "")
+        console.log(stdout)
+        event.reply('os-detected',cas);
        
     });
+
+    // fs.readFile('/etc/os-release', 'utf8', (err, data) => {
+    //     if (err) {
+    //         console.error(`Error reading os-release file: ${err.message}`);
+    //         return;
+    //     }
+
+    //     const lines = data.split('\n');
+    //     let version = '';
+    //     let name = '';
+
+    //     lines.forEach(line => {
+    //         if (line.startsWith('VERSION_ID=')) {
+    //             version = line.split('=')[1].replace(/"/g, '').trim();
+    //         }
+    //         if (line.startsWith('NAME=')) {
+    //             name = line.split('=')[1].replace(/"/g, '').trim();
+    //         }
+    //     });
+    //     console.log(name)
+    //     event.reply('os-detected',name);
+       
+    // });
 }
 
 function runWindowsBenchmark() {

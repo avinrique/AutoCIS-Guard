@@ -1,26 +1,20 @@
 [
   {
-    "Guideline": "Ensure 'Minimum password age' is set to '1 or more day(s)'",
-    "Expected Output": "1",
-    "Actual Output": "0",
-    "Status": "Fail"
-  },
-  {
     "Guideline": "Ensure 'Enforce password history' is set to '24 or more password(s)'",
     "Expected Output": "24",
     "Actual Output": "Force user logoff how long after time expires?:       Never\r\nMinimum password age (days):                          0\r\nMaximum password age (days):                          42\r\nMinimum password length:                              0\r\nLength of password history maintained:                None\r\nLockout threshold:                                    Never\r\nLockout duration (minutes):                           30\r\nLockout observation window (minutes):                 30\r\nComputer role:                                        WORKSTATION\r\nThe command completed successfully.",
     "Status": "Fail"
   },
   {
-    "Guideline": "Ensure 'Maximum password age' is set to '365 or fewer days",
-    "Expected Output": "365",
-    "Actual Output": "42",
+    "Guideline": "Ensure 'Minimum password age' is set to '1 or more day(s)'",
+    "Expected Output": "1",
+    "Actual Output": "0",
     "Status": "Fail"
   },
   {
-    "Guideline": "Ensure 'Store passwords using reversible encryption' is set to 'Disabled'",
-    "Expected Output": "Enable",
-    "Actual Output": "Force user logoff how long after time expires?:       Never\r\nMinimum password age (days):                          0\r\nMaximum password age (days):                          42\r\nMinimum password length:                              0\r\nLength of password history maintained:                None\r\nLockout threshold:                                    Never\r\nLockout duration (minutes):                           30\r\nLockout observation window (minutes):                 30\r\nComputer role:                                        WORKSTATION\r\nThe command completed successfully.",
+    "Guideline": "Ensure 'Maximum password age' is set to '365 or fewer days",
+    "Expected Output": "365",
+    "Actual Output": "42",
     "Status": "Fail"
   },
   {
@@ -39,6 +33,12 @@
     "Guideline": "Ensure 'Minimum password length' is set to '14 or more character(s)'",
     "Expected Output": "14",
     "Actual Output": "0",
+    "Status": "Fail"
+  },
+  {
+    "Guideline": "Ensure 'Store passwords using reversible encryption' is set to 'Disabled'",
+    "Expected Output": "Enable",
+    "Actual Output": "Force user logoff how long after time expires?:       Never\r\nMinimum password age (days):                          0\r\nMaximum password age (days):                          42\r\nMinimum password length:                              0\r\nLength of password history maintained:                None\r\nLockout threshold:                                    Never\r\nLockout duration (minutes):                           30\r\nLockout observation window (minutes):                 30\r\nComputer role:                                        WORKSTATION\r\nThe command completed successfully.",
     "Status": "Fail"
   }
 ]

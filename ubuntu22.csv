@@ -1,11 +1,11 @@
 sn,Guideline,Command to Check,Expected Output
-1,Ensure 'cramfs' kernel module is not available,lsmod | grep cramfs,null
-2,Ensure 'freevxfs' kernel module is not available,lsmod | grep freevxfs,null
-3,Ensure 'hfs' kernel module is not available,lsmod | grep hfs,null
-4,Ensure 'hfsplus' kernel module is not available,lsmod | grep hfsplus,null
-5,Ensure 'jffs2' kernel module is not available,lsmod | grep jffs2,null
-6,Ensure 'squashfs' kernel module is not available,lsmod | grep squashfs,null
-7,Ensure 'udf' kernel module is not available,lsmod | grep udf,null
-8,Ensure 'usb-storage' kernel module is not available,lsmod | grep usb-storage,null
+1,Ensure 'cramfs' kernel module is not available,lsmod | grep cramfs,
+2,Ensure 'freevxfs' kernel module is not available,lsmod | grep freevxfs,
+3,Ensure 'hfs' kernel module is not available,lsmod | grep hfs,
+4,Ensure 'hfsplus' kernel module is not available,lsmod | grep hfsplus,
+5,Ensure 'jffs2' kernel module is not available,lsmod | grep jffs2,
+6,Ensure 'squashfs' kernel module is not available,lsmod | grep squashfs,
+7,Ensure 'udf' kernel module is not available,lsmod | grep udf,
+8,Ensure 'usb-storage' kernel module is not available,lsmod | grep usb-storage,
 9,Ensure 'nodev' option is set on '/tmp' partition,findmnt -n /tmp | grep nodev,nodev
 10,Ensure 'nosuid' option is set on '/tmp' partition,findmnt -n /tmp | grep nosuid,nosuid

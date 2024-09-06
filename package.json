@@ -11,6 +11,7 @@
   "dependencies": {
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
-    "electron": "^32.0.2"
+    "electron": "^32.0.2",
+    "realm": "^12.13.1"
   }
 }
